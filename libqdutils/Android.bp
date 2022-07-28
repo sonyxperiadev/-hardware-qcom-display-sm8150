@@ -9,6 +9,8 @@ cc_library_shared {
     header_libs: [
         "libhardware_headers",
         "libutils_headers",
+        "display_headers",
+        "display_intf_headers"
     ],
     shared_libs: [
         "libbinder",
