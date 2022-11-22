@@ -42,7 +42,6 @@
 #include "membuf_wrapper.h"
 
 #ifndef TRUSTED_VM
-#include "common_log.h"
 
 /** adb log */
 #ifdef LOG_TAG
@@ -57,6 +56,19 @@
 #undef LOG_NDEBUG
 #endif
 #define LOG_NDEBUG  0  // Define to enable LOGV
+
+#ifndef LOGD
+#define LOGD ALOGD
+#endif
+#ifndef LOGE
+#define LOGE ALOGE
+#endif
+#ifndef LOGW
+#define LOGW ALOGW
+#endif
+#ifndef LOGI
+#define LOGI ALOGI
+#endif
 
 #define DLOGI(...) do { LOGD(__VA_ARGS__); printf(__VA_ARGS__); printf("\n"); } while (0)
 #define DLOGE(...) do { LOGE(__VA_ARGS__); printf(__VA_ARGS__); printf("\n"); } while (0)
