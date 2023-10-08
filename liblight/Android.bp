@@ -1,4 +1,3 @@
-
 cc_library_shared {
     name: "lights.qcom",
     srcs: ["lights.c"],
@@ -6,7 +5,5 @@ cc_library_shared {
     header_libs: ["libhardware_headers"],
     shared_libs: ["liblog"],
     cflags: ["-DLOG_TAG=\"qdlights\""],
-    clang: true,
     vendor: true,
-
 }
