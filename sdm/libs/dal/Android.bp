@@ -11,6 +11,10 @@ cc_library_shared {
         "-Wno-format",
         "-DLOG_TAG=\"SDM\"",
     ],
+    header_libs: [
+        "display_headers",
+        "qti_kernel_headers",
+    ],
     shared_libs: [
         "libdisplaydebug",
         "libsdmutils",
