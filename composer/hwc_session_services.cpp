@@ -1186,8 +1186,6 @@ bool HWCSession::CWB::IsCwbActiveOnDisplay(hwc2_display_t disp_type) {
     dpy_index = hwc_session_->GetDisplayIndex(qdutils::DISPLAY_PRIMARY);
   } else if (disp_type == HWC_DISPLAY_EXTERNAL) {
     dpy_index = hwc_session_->GetDisplayIndex(qdutils::DISPLAY_EXTERNAL);
-  } else if (disp_type == HWC_DISPLAY_BUILTIN_2) {
-    dpy_index = hwc_session_->GetDisplayIndex(qdutils::DISPLAY_BUILTIN_2);
   } else {
     return false;
   }
