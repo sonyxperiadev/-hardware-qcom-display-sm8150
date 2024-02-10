@@ -1,5 +1,5 @@
 soong_namespace {
-    imports: ["vendor/qcom/opensource/display-commonsys-intf/sm8450"],
+    imports: ["vendor/qcom/opensource/display-commonsys-intf/sm8550"],
 }
 
 soong_config_module_type {
