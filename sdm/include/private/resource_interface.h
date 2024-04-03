@@ -143,7 +143,7 @@ class ResourceInterface {
   virtual uint32_t GetMixerCount() = 0;
   virtual void HandleTUITransition(Handle display_ctx, bool tui_active) = 0;
   virtual DisplayError SetBlendSpace(Handle display_ctx, const PrimariesTransfer &blend_space) = 0;
-  virtual bool IsDisplayHWAvailable() { return true; }
+  virtual bool IsDisplayHWAvailable() = 0;
 };
 
 }  // namespace sdm
