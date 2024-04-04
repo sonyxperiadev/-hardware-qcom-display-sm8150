@@ -813,7 +813,8 @@ bool CompManager::IsRotatorSupportedFormat(LayerBufferFormat format) {
 bool CompManager::IsDisplayHWAvailable() {
   std::lock_guard<std::recursive_mutex> obj(comp_mgr_mutex_);
   if (resource_intf_) {
-    return resource_intf_->IsDisplayHWAvailable();
+    //return resource_intf_->IsDisplayHWAvailable();
+    return true;
   }
 
   return false;
